@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles.css" rel="stylesheet"/>
+    <script src="script.js" defer></script>
+    <title>Pomodoro Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="circle">
+        <div id="timeleft">25 : 00</div>
+        <div id="buttons">
+          <button class="btn-controller" ><i id="BtnPause" class="fas fa-pause"></i></button>
+            <button id="buttonPlay" class="btn-controller">
+            <i  class="fas fa-play" ></i>
+          <button id="buttonReset" class="btn-controller"> 
+            <i class="fas fa-sync"></i>
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="lenghtTimer">
+      <!--  Session length -->
+      <div class="pomodoro-item">
+        <div class="label">Session Length</div>
+        <div class="row-pomodoro">
+          <button id="sessionDecrement" class="btn-updown">-</button>
+          <div id="sessionLength" class="row-pomodoro lengthTime">25</div>
+          <button id="sessionIncrement" class="btn-updown">+</button>
+        </div>
+      </div>
+
+      <!-- Break Length -->
+      <div class="pomodoro-item">
+        <div class="label">Break Length</div>
+        <div class="row-pomodoro">
+          <button id="breakDecrement" class="btn-updown">-</button>
+          <div id="breakLength" class="row-pomodoro lengthTime">5</div>
+          <button id="breakIncrement" class="btn-updown">+</button>
+        </div>
+      </div>
+    </div>
+
+<!--Audio -->
+
+<audio id = "relaxSong"
+src="/audio/relax.wav">
+</audio>
+
+  </body>
+</html>
