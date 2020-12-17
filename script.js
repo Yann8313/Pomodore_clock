@@ -78,13 +78,13 @@ class Countdowm {
   resetTimer() {
     workTime = true; 
     breakTime = false; 
-    timeLeftDOM.innerHTML = valueSession + " : " + "0" + 0;
     valueSession = 25;
     valueBreak = 5;
     sec = 59;
     sessionLengthDOM.innerHTML = 25;
     breakLengthDOM.innerHTML = 5;
     clearInterval(interval);
+    timeLeftDOM.innerHTML = valueSession + " : " + "0" + 0;
     playButton.classList.remove("hide");
     new SessionAndBreakLength(valueSession, valueBreak);
   }
