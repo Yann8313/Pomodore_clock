@@ -76,6 +76,8 @@ class Countdowm {
   }
 
   resetTimer() {
+    workTime = true; 
+    breakTime = false; 
     timeLeftDOM.innerHTML = valueSession + " : " + "0" + 0;
     valueSession = 25;
     valueBreak = 5;
